@@ -2,3 +2,6 @@
 *.compiled
 *.o
 *.bak
+kurozora_client
+kurozora_client.app
+
