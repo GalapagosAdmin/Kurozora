@@ -102,7 +102,7 @@ begin
     Case UpCase(cmd[1]) of
       'B' :DoSetBeacon;              // Set Beacon In This Sector
       'G' :DoGoTo;                   // Fly to sector
-      'H' :Writeln('View Help...');  // Display Help Screen
+      'H' :WriteHelp;  // Display Help Screen
       'I' :Writeln('Ship Info...');  // Status of own ship
       'L' :Writeln('Long Range Scan');             // Long range scan
       'M' :Writeln('Deploy Mines...');             // Leave Space Mines
@@ -132,7 +132,17 @@ end;
 procedure TKuroZora.WriteHelp;
 begin
   { add your help code here }
-  writeln('Usage: ',ExeName,' -h');
+ // writeln('Usage: ',ExeName,' -h');
+  writeln('B : Set Beacon In This Sector');
+  writeln('G : Fly to sector');
+  writeln('H : View Help...');  
+  writeln('I : Ship Info...');  
+  writeln('L : Long Range Scan');      
+  writeln('M : Deploy Mines...');           
+  writeln('S : Look Around (Detailed Short Range Scan');
+  writeln('T : Terraforming Activities.');  
+  writeln('Q : Quit');
+
 end;
 
 var
